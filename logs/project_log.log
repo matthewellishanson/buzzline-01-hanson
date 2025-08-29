@@ -181,3 +181,22 @@
 2025-08-29 10:38:42.828 | INFO     | __main__:main:114 - I just shared an app! It was boring.
 2025-08-29 10:38:44.515 | INFO     | __main__:main:85 - END.....
 2025-08-29 10:38:45.829 | INFO     | __main__:main:114 - I just tried an app! It was boring.
+2025-08-29 11:20:52.624 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-08-29 11:42:00.249 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-08-29 11:42:00.250 | INFO     | __main__:main:106 - START producer...
+2025-08-29 11:42:00.250 | INFO     | __main__:main:107 - Hit CTRL c (or CMD c) to close.
+2025-08-29 11:42:00.250 | INFO     | __main__:get_message_interval:53 - Messages will be sent every 3 seconds.
+2025-08-29 11:42:00.250 | INFO     | __main__:main:114 - I just built a movie! It was amazing.
+2025-08-29 11:42:03.282 | INFO     | __main__:main:114 - I just hated a movie! It was boring.
+2025-08-29 11:42:06.286 | INFO     | __main__:main:114 - I just launched an app! It was enticing.
+2025-08-29 11:42:09.288 | INFO     | __main__:main:114 - I just shared a trick! It was exuberant.
+2025-08-29 11:42:12.291 | INFO     | __main__:main:114 - I just tried a song! It was exuberant.
+2025-08-29 11:42:15.292 | INFO     | __main__:main:114 - I just found an app! It was disgusting.
+2025-08-29 11:42:18.294 | INFO     | __main__:main:114 - I just built a trick! It was boring.
+2025-08-29 11:42:21.297 | INFO     | __main__:main:114 - I just tried a trick! It was garrulous.
+2025-08-29 11:42:24.298 | INFO     | __main__:main:114 - I just saw a story! It was exuberant.
+2025-08-29 11:42:27.301 | INFO     | __main__:main:114 - I just built an app! It was garrulous.
+2025-08-29 11:42:30.303 | INFO     | __main__:main:114 - I just tried a book! It was disgusting.
+2025-08-29 11:42:33.306 | INFO     | __main__:main:114 - I just found a book! It was funny.
+2025-08-29 11:42:36.308 | INFO     | __main__:main:114 - I just launched a movie! It was weird.
+2025-08-29 11:42:39.313 | INFO     | __main__:main:114 - I just loved a script! It was exciting.
