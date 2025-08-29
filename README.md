@@ -1,4 +1,4 @@
-# buzzline-01-case
+# buzzline-01-hanson
 
 ![Python 3.11](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
 
@@ -11,28 +11,20 @@ We'll use a consumer to monitor the log file and alert us when a special message
 
 We practice professional Python. In each course that uses Python, we use a standard set of popular professional tools. 
 This course uses advanced tools such as Apache Kafka that requires **Python 3.11**. 
-You are encouraged to install and practice with multiple versions. 
-If space is an issue, we only need Python 3.11 for this course. 
 
-Follow instructions at [pro-analytics-01](https://github.com/denisecase/pro-analytics-01), **Part 1: Set Up Machine & Sign up for GitHub**.
+## Task 2. Set Up Your Python Environment
 
-**Setup is critical.** Follow all steps exactly and verify success before proceeding.  
-Missing or incomplete setup steps can make the course impossible to complete.
+Windows Powershell:
 
-## Task 2. Initialize a Project
-
-Once your machine is ready, you'll copy this template repository into your own GitHub account  
-and create your personal version of the project to run and explore. 
-Name it **buzzline-01-yourname** (replace `yourname` with something unique to you).  
-
-Follow instructions at [pro-analytics-01](https://github.com/denisecase/pro-analytics-01), **Part 2: Initialize a Project**.
-This will get your project stored safely in the cloud - and ready for work on your machine. 
+```shell
+py -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+```
 
 ## Task 3. Generate Streaming Data (Terminal 1)
 
 Now we'll generate some streaming data. 
-By the way - you've done 90% of the hard work before we even look at code. 
-Congratulations!
 
 In VS Code, open a terminal.
 Use the commands below to activate .venv, and run the generator as a module. 
@@ -43,12 +35,6 @@ Windows PowerShell:
 ```shell
 .venv\Scripts\activate
 py -m producers.basic_producer_case
-```
-
-Mac/Linux:
-```zsh
-source .venv/bin/activate
-python3 -m producers.basic_producer_case
 ```
 
 ## Task 4. Monitor an Active Log File (Terminal 2)
@@ -63,22 +49,11 @@ Windows:
 ```shell
 .venv\Scripts\activate
 py -m consumers.basic_consumer_case
-```
+``` 
 
-Mac/Linux:
-```zsh
-source .venv/bin/activate
-python3 -m consumers.basic_consumer_case
-```
+## Task 5: Create and Monitor a Custom Active Log File
 
-## How to Stop the Processes
-Stop a continuous process (kill it) by selecting the terminal and hitting CTRL+c (press CTRL key and c key at the same time). 
-
-## Save Space
-To save disk space, you can delete the .venv folder when not actively working on this project.
-We can always recreate it, activate it, and reinstall the necessary packages later. 
-Managing Python virtual environments is a necessary and valuable skill. 
-We will get a good amount of practice. 
+Copy over the contents of basic_producer_case.py to a new file (basic_producer_hanson.py) and modify the contents of the custom messages. Do the same with the basic_consumer_case.py file, except this time don't make any additions or modifications. 
 
 ## License
 This project is licensed under the MIT License as an example project. 
