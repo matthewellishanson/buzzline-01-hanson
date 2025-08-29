@@ -200,3 +200,4 @@
 2025-08-29 11:42:33.306 | INFO     | __main__:main:114 - I just found a book! It was funny.
 2025-08-29 11:42:36.308 | INFO     | __main__:main:114 - I just launched a movie! It was weird.
 2025-08-29 11:42:39.313 | INFO     | __main__:main:114 - I just loved a script! It was exciting.
+2025-08-29 15:35:59.307 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log

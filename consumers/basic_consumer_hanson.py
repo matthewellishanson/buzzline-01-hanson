@@ -51,6 +51,30 @@ def process_message(log_file) -> None:
                 print(f"ALERT: The special message was found! \n{message}")
                 logger.warning(f"ALERT: The special message was found! \n{message}")
 
+# analyze patterns in the messages read
+def analyze_message(message: str) -> None:
+    """
+    Analyze the content of a log message for specific patterns.
+
+    Args:
+        message (str): The log message to analyze.
+    """
+    if "exciting" in message:
+        print(f"ALERT: The exciting message was found! \n{message}")
+        logger.warning(f"ALERT: The exciting message was found! \n{message}")
+    if "boring" in message:
+        print(f"ALERT: The boring message was found! \n{message}")
+        logger.warning(f"ALERT: The boring message was found! \n{message}")
+    
+    # count number of instances of "exciting" and "boring"
+    exciting_count = message.count("exciting")
+    boring_count = message.count("boring")
+    if exciting_count > 0:
+        print(f"ALERT: Found {exciting_count} instances of 'exciting' in the message.")
+        logger.warning(f"ALERT: Found {exciting_count} instances of 'exciting' in the message.")
+    if boring_count > 0:
+        print(f"ALERT: Found {boring_count} instances of 'boring' in the message.")
+        logger.warning(f"ALERT: Found {boring_count} instances of 'boring' in the message.")
 
 #####################################
 # Define main function for this script.
@@ -73,6 +97,7 @@ def main() -> None:
         # as an argument. We know things will go wrong
         # eventually when the user stops the process, so we use a try block.
         process_message(log_file_path)
+        analyze_message(log_file_path)
 
     except KeyboardInterrupt:
         print("User stopped the process.")
